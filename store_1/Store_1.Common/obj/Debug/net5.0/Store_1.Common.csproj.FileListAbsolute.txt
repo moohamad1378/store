@@ -1,0 +1,12 @@
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\bin\Debug\net5.0\Store_1.Common.deps.json
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\bin\Debug\net5.0\Store_1.Common.dll
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\bin\Debug\net5.0\ref\Store_1.Common.dll
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\bin\Debug\net5.0\Store_1.Common.pdb
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\obj\Debug\net5.0\Store_1.Common.csprojAssemblyReference.cache
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\obj\Debug\net5.0\Store_1.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\obj\Debug\net5.0\Store_1.Common.AssemblyInfoInputs.cache
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\obj\Debug\net5.0\Store_1.Common.AssemblyInfo.cs
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\obj\Debug\net5.0\Store_1.Common.csproj.CoreCompileInputs.cache
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\obj\Debug\net5.0\Store_1.Common.dll
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\obj\Debug\net5.0\ref\Store_1.Common.dll
+C:\Users\Lohetaban\source\repos\store_1\Store_1.Common\obj\Debug\net5.0\Store_1.Common.pdb

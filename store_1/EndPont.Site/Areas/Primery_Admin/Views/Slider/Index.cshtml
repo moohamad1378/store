@@ -1,0 +1,87 @@
+﻿@using Store_1.Application.Services.HomePages.GetSlilerImages;
+@model ResultGetSliderImagesDto;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Primery_Admin/Views/Shared/_Adminlayout.cshtml";
+}
+
+<h1>Index</h1>
+
+<div class="row">
+    @foreach (var item in Model.SliderImage)
+    {
+        <div class="col-xl-3 col-lg-6 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <img class="card-img-top img-fluid" src="~/@item.Src" alt="Card image cap">
+                    <div class="card-block">
+                        <a class="btn btn-warning" onclick="Delete('@item.Id')" >Delete Image</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>
+@section Scripts{
+
+    <link href="~/Sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+    <script src="~/Sweetalert2/sweetalert2.min.js"></script>
+
+    <script>
+
+        function Delete(SliderId) {
+            swal.fire({
+                title: 'delet image',
+                text: 'Are you sure you want to delete image?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#7cacbe',
+                confirmButtonText: 'Yes',
+                cancelButtonText: 'No'
+            }).then((result) => {
+                if (result.value) {
+                    var postData = {
+                        'SliderId': SliderId,
+                    };
+                    $.ajax({
+                        contentType: 'application/x-www-form-urlencoded',
+                        dataType: 'json',
+                        type: "POST",
+                        url: "Remove",
+                        data: postData,
+                        success: function (data) {
+                            if (data.isSuccess == true) {
+                                swal.fire(
+                                    'success',
+                                    data.message,
+                                    'success'
+                                ).then(function (isConfrim) {
+                                    location.reload();
+                                });
+                            }
+                            else {
+                                swal.fire(
+                                    'warning',
+                                    data.message,
+                                    'warning'
+                                );
+                            }
+                        },
+                        error: function (request, status, error) {
+                            alert(request.responseText);
+                        }
+                    })
+                }
+            })
+
+            }   
+        
+
+    </script>
+
+
+}
+
